@@ -19,6 +19,6 @@ function requestProducts(category) {
 function loadProducts(data) {
     console.log(data)
     data.forEach(function(product) {
-        $('#products').append(`<div class='item'><img class='item-image' src='${ product.image_link }'><p>${ product.name }</p></div>`)
+        $('#products').append(`<div class='item center'><img class='item-image' src='${ product.image_link }'><p>${ product.name }</p></div>`)
     })
 }
