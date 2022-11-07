@@ -5,11 +5,14 @@ const lastActive = null
 
 $(window).bind("load", function() {
     $('.nav-btn').on('click', function() {
-        $("a").removeClass("active")
-        $(this).addClass("active")
+        $('a').removeClass('active')
+        $(this).addClass('active')
 
         requestProducts($(this).attr('category'))
+        $('#load-wrapper').show()
     })
+
+    $('#load-wrapper').hide()
 })
 
 function requestProducts(category) {
@@ -40,4 +43,6 @@ function loadProducts(data) {
             </div>
         `)
     })
+
+    $('#load-wrapper').hide()
 }

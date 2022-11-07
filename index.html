@@ -5,10 +5,16 @@
     <title></title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/loading.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src='scripts/main.js'></script>
 </head>
 <body>
+    <div class="content">
+        <div class="container" id="products">
+
+        </div>
+    </div>
     <div class="sticky" id="navbar">
         <a class="nav-btn active">Home</a>
         <a class="nav-btn" category="blush">Blush</a>
@@ -16,9 +22,13 @@
         <a class="nav-btn" category="eyeshadow">Eyeshadow</a>
         <a class="nav-btn" category="lipstick">Lipstick</a>
     </div>
-    <div class="content">
-        <div class="container" id="products">
-
+    <div id="load-wrapper">
+        <div id="sticky-load-wrapper">
+            <div class="load">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            </div>
         </div>
     </div>
 </body>
