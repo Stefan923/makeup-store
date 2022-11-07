@@ -26,16 +26,32 @@ body {
     color: #ffffff;
 }
 
-.content {
-    padding: 16px;
-}
-
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
+    padding-top: 60px;
 }
 
-.sticky + .content {
-    padding-top: 60px;
+.content {
+    margin: 30px 50px 30px 50px;
+}
+
+.container {
+    display: grid;
+    overflow-y: scroll;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+}
+
+.item {
+    background-color: rgb(228, 228, 228);
+    border-radius: 20px;
+    max-width: 70%;
+    margin-bottom: 20px;
+}
+
+.item-image {
+    width: 128px;
+    height: 128px;
 }

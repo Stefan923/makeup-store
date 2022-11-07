@@ -12,18 +12,13 @@ function requestProducts(category) {
         url: `${ API_URL }${ category }`,
         method: 'GET',
         dataType: "json",
-        success: function(data) {
-            console.log('t')
-            data.forEach(function(product) {
-                $('#products').append('<p>' + product.name + '</p>')
-            })
-        }
+        success: loadProducts,
     })
 }
 
 function loadProducts(data) {
-    console.log('t')
+    console.log(data)
     data.forEach(function(product) {
-        $('#products').append('<p>' + product.name + '</p>')
+        $('#products').append(`<div class='item'><img class='item-image' src='${ product.image_link }'><p>${ product.name }</p></div>`)
     })
 }
