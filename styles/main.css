@@ -34,30 +34,62 @@ body {
 }
 
 .content {
-    margin: 30px 50px 30px 50px;
+    margin: 30px 80px 30px 80px;
 }
 
 .container {
     display: grid;
+    column-gap: 10%;
+    row-gap: 50px;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
 }
 
-.item {
+.card {
     background-color: rgb(228, 228, 228);
     border-radius: 20px;
-    padding: 10px;
-    max-width: 70%;
-    margin-bottom: 20px;
+    max-height: 300px;
+    padding: 10px 0px 10px 0px;
+    overflow-y: hidden;
 }
 
-.item-image {
-    width: 128px;
-    height: 128px;
+.card-image {
+    width: 256px;
+    height: 256px;
     border-radius: 20px;
+}
+
+.card-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    border-radius: 20px;
+    background-color: #ffffff91;
+    transform: translateY(0%);
+}
+
+.card:hover .card-header {
+    transform: translateY(-100%) translateY(54px);
+}
+
+.card-description {
+    overflow-y: scroll;
+    padding: 0px 20px 0px 20px;
+}
+
+.card-price {
+    color: #842078;
+    align-self: flex-end;
+    padding-right: 20px;
 }
 
 .center {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+}
+
+.center h3 {
+    text-align: center;
 }
