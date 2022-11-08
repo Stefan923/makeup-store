@@ -72,11 +72,11 @@ body {
 }
 
 .card-applied {
-    background-color: #89b6ff;
+    background-color: rgb(244, 98, 171);
 }
 
 .card-marked {
-    background-color: #ffa6a6;
+    background-color: rgb(254, 145, 199);
 }
 
 .card-confirmation {
